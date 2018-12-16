@@ -79,10 +79,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    margin: 20px; 
-}
-
 .rounded {
     border-radius: 100%;
 }
@@ -105,13 +101,13 @@ img {
 .code-img {
     width: 25%;
     float: left;
-    margin-right: 30px;
+    margin: 20px 30px 20px 20px;
 }
 
 .clipper-img {
     width: 25%;
     float: right;
-    margin-left: 30px;
+    margin: 20px 20px 20px 30px;
 }
 
 .contact-message {
