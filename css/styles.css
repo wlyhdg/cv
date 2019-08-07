@@ -87,6 +87,10 @@ a {
     font-weight: normal;
 }
 
+.pro-emph {
+    text-decoration: underline;
+}
+
 .intro {
     width: 30%;
     margin: auto;
@@ -98,13 +102,13 @@ a {
     text-align: left;
 }
 
-.code-img {
+.left-img {
     width: 25%;
     float: left;
     margin: 20px 30px 20px 20px;
 }
 
-.clipper-img {
+.right-img {
     width: 25%;
     float: right;
     margin: 20px 20px 20px 30px;
@@ -147,3 +151,25 @@ a {
     text-decoration: none;
     border-style: none;
   }
+
+  .center-me {
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio-item:hover {   
+      opacity: 0.8;
+  }
+
+  ul.learned {
+      list-style-type: circle;
+      list-style-position: inside;
+      width: auto;
+      text-align: center;
+  }
+
+.portfolio {
+    font-style: oblique;
+    font-size: smaller;
+    margin-bottom: 5%;
+}
