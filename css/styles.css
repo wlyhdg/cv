@@ -10,10 +10,19 @@ img[alt="mountain-img"] {
     position: absolute;
     display: block;
     height: auto;
-    width: 65%;
+    width: 70%;
     left: 0%;
     bottom: 0%;
-    transform: translateX(25%);
+    transform: translateX(20%);
+}
+
+#whoami {
+    position: relative;
+    z-index: 3;
+}
+
+.profile h2 {
+    padding-top: 3rem;
 }
 
 hr {
@@ -232,5 +241,14 @@ img[class="portfolio-item pending"]:hover {
     h3 {
         padding: 0px 10px 0px 10px;
         font-size: 1rem;
+    }
+    hr {
+        border: solid rgb(59, 58, 58) 1px;
+        border-bottom: none;
+        width: 60%;
+        margin: 100px auto;
+    }
+    h2 {
+        font-size: 2rem;
     }
 }
