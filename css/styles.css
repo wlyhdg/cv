@@ -1,8 +1,17 @@
 body {
     margin:0;
+    padding: 0;
     text-align: center;
     font-family: 'Merriweather', sans-serif;
     color: #053220;
+}
+
+img[alt="mountain-img"] {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 50%;
+    transform: translateX(50%);
 }
 
 hr {
@@ -23,7 +32,9 @@ p {
 }
 
 .middle-container { 
-    margin: 100px 0;
+    padding: 100px 0;
+    background-image: linear-gradient(45deg, white, rgb(132, 161, 126));
+    color: rgb(88, 88, 57);
 }
 
 .bottom-container {
@@ -37,7 +48,7 @@ p {
 }
 
 a:hover {
-    color: #d34c26;
+    color: #080606;
 }
 
 h1 {
@@ -120,34 +131,25 @@ a {
 }
 
 .copyright {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     padding: 20px 0 0;
+    font-family: 'Lato', sans-serif;
 }
 
 .butn {
     background: #0f7d51 ;
-    background-image: -webkit-linear-gradient(top, #0f7d51 , #053220);
-    background-image: -moz-linear-gradient(top, #0f7d51 , #053220);
-    background-image: -ms-linear-gradient(top, #0f7d51 , #053220);
-    background-image: -o-linear-gradient(top, #0f7d51 , #053220);
-    background-image: linear-gradient(to bottom, #0f7d51 , #053220);
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     border-radius: 8px;
     font-family: 'Lato', sans-serif;
     color: #ffffff;
     font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    padding: 15px;
     text-decoration: none;
+    transition: 2s ease;
   }
   
   .butn:hover {
-    background: #15a169;
-    background-image: -webkit-linear-gradient(top, #107a57, #11410b);
-    background-image: -moz-linear-gradient(top, #107a57, #11410b);
-    background-image: -ms-linear-gradient(top, #107a57, #11410b);
-    background-image: -o-linear-gradient(top, #107a57, #11410b);
-    background-image: linear-gradient(to bottom, #107a57, #11410b);
     text-decoration: none;
     border-style: none;
   }
@@ -157,9 +159,18 @@ a {
     justify-content: center;
   }
 
+  .portfolio-item {
+      border: 10px outset #107a57;
+      border-radius: 5px;
+  }
+
   .portfolio-item:hover {   
       opacity: 0.8;
   }
+
+  .portfolio-item::after {  
+    content: 'hallo';
+}
 
   ul.learned {
       list-style-type: circle;
@@ -169,7 +180,6 @@ a {
   }
 
 .portfolio {
-    font-style: oblique;
     font-size: smaller;
     margin-bottom: 5%;
 }
