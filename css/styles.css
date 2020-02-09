@@ -183,3 +183,8 @@ a {
     font-size: smaller;
     margin-bottom: 5%;
 }
+
+img[class="portfolio-item pending"]:hover {
+    opacity: 1;
+    cursor: initial;
+}
