@@ -11,9 +11,10 @@ img[alt="mountain-img"] {
     display: block;
     height: auto;
     width: 70%;
-    left: 0%;
+    left: 50%;
     bottom: 0%;
-    transform: translateX(20%);
+    transform: translateX(-50%);
+    max-width: 866px;
 }
 
 #whoami {
@@ -94,15 +95,18 @@ h3 {
 }
 
 .top-cloud {
-    position: absolute;
+    /* position: absolute;
     right: 300px;
-    top: 40px;
+    top: 40px; */
+    animation: cloud-lcoast 20s ease infinite;
 }
 .bottom-cloud {
-    position: absolute;
+    z-index: 1;
+    animation: cloud-rcoast 20s ease infinite;
+    /* position: absolute;
     left: 250px;
     bottom: 300px;
-    z-index: 1;
+    z-index: 1; */
 }
 
 a {
@@ -139,12 +143,22 @@ a {
     width: 25%;
     float: left;
     margin: 20px 30px 20px 20px;
+    clear: left;
 }
 
 .right-img {
     width: 25%;
     float: right;
     margin: 20px 20px 20px 30px;
+    clear: right;
+}
+
+.no-left {
+    clear: left;
+}
+
+.no-right {
+    clear: right;
 }
 
 .contact-message {
@@ -211,6 +225,35 @@ img[class="portfolio-item pending"]:hover {
     opacity: 1;
     cursor: initial;
 }
+
+@keyframes cloud-lcoast {
+    from  {
+        position: absolute;
+        right: 300px;
+        top: 40px;
+        }
+
+    to {
+        position: absolute;
+        right: 600px;
+        top: 40px;
+    }
+}
+
+@keyframes cloud-rcoast {
+    from  {
+        position: absolute;
+        left: 250px;
+        bottom: 300px;
+        }
+
+    to {
+        position: absolute;
+        left: 700px;
+        bottom: 300px;
+    }
+}
+
 
 @media screen and (max-width: 480px) {
     .top-container h1{
